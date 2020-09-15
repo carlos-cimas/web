@@ -1,0 +1,203 @@
+body{
+    box-sizing: border-box;
+    margin:0px;
+    padding: 0px;
+}
+*{
+    font-family: sans-serif;
+}
+.contenedor{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+.contenedor div{
+    
+}
+img{
+    width: 100%;
+}
+.header_contenidor{
+    position:relative;
+    z-index: 100;
+}
+.banner{
+    height: 50vh; 
+    margin-top: -60px;
+    position: relative;
+    background:url('../img/GAAA.jpg');
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.banner_description{
+    position: absolute;
+    text-align: center;
+    color: #ffff;
+    transform: translateX(-50%)translateY(-50%);
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    font-size: 15px;
+    margin-top: 25px;
+}
+.button_banner{
+    background:#0000FF;
+    border: none;
+    padding: 12px;
+    color: #ffff;
+    font-size: 20px;
+}
+.button_banner:hover{
+    border: 2px solid #0000FF;
+    background:none;
+}
+.galeria h1{
+    font-size: 40px;
+    text-align: center;
+}
+.galeria{
+    margin: 20px;
+    text-align: center;
+}
+
+.team h1{
+    font-size: 40px;
+    text-align: center;
+}
+.team{
+    background:#f4f4f4;
+    padding: 40px;
+}
+.team_columna img{
+    border-radius: 50%;
+}
+.team_columna1 img{
+    border-radius: 50%;
+    text-align: center;
+}
+.team p{
+    text-align: justify;
+}
+.team_grid{
+    display: grid;
+    grid-gap: 30px;
+}
+.team_grid1{
+    display: grid;
+    grid-gap: 30px;
+    text-align: center;
+}
+.info h1{
+    color: #0000FF;
+    font-size: 30px;
+}
+.info{
+    text-align: center;
+}
+.info_columna{
+    margin: 20px;
+}
+.info .contenedor{
+    display: grid;
+    grid-gap: 10px;
+    text-align: center; 
+}
+.banner2{
+    height: 50vh; 
+    color: #ffff;
+    position: relative;
+    background:url('../img/Oceano.jpg');
+    background-size:cover;
+    background-position: right;
+    background-attachment: fixed;
+}
+.banner2 h1{
+    font-size: 28px;
+}
+.banner2_description{
+    position: absolute;
+    width: 100%;
+    top:50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center; 
+}
+.footer{
+    background:#292929;
+    color: #ffff;
+    text-align: center;
+    padding: 10px;
+
+}
+@media(min-width: 520px){
+    .banner h1{
+        font-size: 30px;
+    }
+    .grid{
+        display:grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .team .team_grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .team .team_grid1{
+        grid-template-columns: repeat(2,1fr);
+        text-align: center;
+    }
+    .team .team_grid1 p{
+        grid-template-columns: repeat(2,1fr);
+        text-align: center;
+    }
+    .info .contenedor{
+        grid-template-columns: repeat(3,150px);
+        justify-content: space-around;
+        text-align: center;
+    }
+    .banner2 h1{
+        font-size: 50px;
+    }
+    .banner2 p{
+        font-size: 25px;
+    }
+}
+@media(min-width: 728px){
+
+    .team .team_grid{
+        grid-template-columns: repeat(4,195px);
+        justify-content: space-around;
+    }
+    .team .team_grid1 {
+        grid-template-columns: repeat(2,195px);
+        justify-content: space-around;
+        text-align: center;
+    }
+    .team .team_grid1 p{
+        grid-template-columns: repeat(2,195px);
+        justify-content: space-around;
+        text-align: center;
+    }
+}
+@media(min-width: 1024px){
+    .contenedor{
+        width: 1000px;
+        text-align: center;
+    }
+    .banner h1{
+        font-size: 45px;
+    }
+.grid{
+    grid-template-columns: repeat(auto-fit,minmax(225px,1fr));
+    grid-auto-flow: dense;
+    grid-auto-rows: 160px;
+}
+
+.big{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.banner2 p{
+    font-size: 30px;
+}
+}
